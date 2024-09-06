@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -19,7 +19,7 @@
     color: orangered;
 }
 
-.text{
+.text {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -29,10 +29,27 @@
     color: rgba(255, 255, 255, .5);
 }
 
+.text-secondary {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .text-small {
     font-size: .8rem;
     font-weight: 400;
     color: rgba(255, 255, 255, .5);
+}
+
+.text-s {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .btn-primary {
@@ -49,27 +66,61 @@
     color: white;
     width: 10rem;
     height: 2.5rem;
+    border-style: none;
     border-radius: 40px;
 }
 
-.title_1{
+.btn1-gap{
+    gap: 10px;
+}
+
+.title_1 {
     font-weight: 700;
     font-size: 3rem;
 }
 
+.title_2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 .header {
-    max-width: 1440px;
     max-height: 700px;
+    max-width: 1440px;
     margin: 0 auto;
-    background-color: rgba(48, 48, 48, 1);
+    background-color: rgba(48, 48, 48, .9);
 }
 
-.nav_border {
-    /* background-color:rgba(255, 255, 255, 0.1); */
-    border: 1px solid grey;
+.navbar {
+    padding-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-border {
+    width: 300px;
+    border: .2px solid grey;
     border-radius: 16px;
+    gap: 30px;
+    justify-content: center;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    transition: all .2s ease;
+    cursor: pointer ;
+}
+
+.nav-link:hover {
+    background-color: rgba(230, 83, 60, 1);
+}
+
+.nav-link.active{
+    background-color:  rgba(230, 83, 60, 1);;
+}
 
 .home-card_1 {
     background-color: rgba(48, 48, 48, 0.54);
@@ -95,18 +146,19 @@
 .circle {
     width: 25px;
     height: 25px;
-    background-color: rgb(230, 83, 60); 
-    border-radius: 50%; 
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
     margin: 12px;
 }
-.videos_tutorials{
+
+.videos_tutorials {
     font-size: 1.5rem;
     font-weight: 900;
 }
 
-.workout_videos{
+.workout_videos {
     font-weight: 900;
-    font-size: 2rem;  
+    font-size: 2rem;
 }
 
 .banner_1 {
@@ -114,16 +166,11 @@
     padding-right: 200px;
 }
 
-.nav-item {
-    list-style: none;
-    margin-right: 2rem;
-}
-
 .home {
     width: 600px;
     height: 440px;
     padding-top: 80px;
-    padding-bottom: 80px;  
+    padding-bottom: 80px;
 }
 
 .homepage {
@@ -134,28 +181,24 @@
     width: 100%;
 }
 
-.navbar {
-    padding-top: 50px;
-    justify-content: space-between;
-    align-items: center;
-}
-
 main {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #111111;
 }
 
 .banner_2 {
-    width: 1440px;
     padding-top: 100px;
 }
 
 .Change_Your_Habits {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .circle-image {
-    width: 220px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -166,60 +209,126 @@ main {
     object-fit: cover;
 }
 
-.body_part_1 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 40px;
+.body_container {
+    justify-content: center;
 }
 
 .body {
+    width: 180px;
+    height: 280px;
     flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.body_write {
+    text-align: center;
+}
+
+.little_title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.banner_3 {
+    width: 1000px;
+    height: 370px;
+    padding: 100px 180px;
+}
+
+
+.run_container {
+    background-color: rgba(34, 34, 34, 1);
+    gap: 165px;
+    border-radius: 20px;
+}
+
+.run_container_wp {
+    padding: 40px 50px;
+}
+
+/* .run_container_imgp{
+    width: 352px;
+    height: 320px;
+    background-image: url('images/run.jpg');
+    background-size: auto;
+    background-position: center; 
+    padding: 30px;
+    border-radius: 50px;
+} */
+
+.run_padding {
+    margin-top: 30px;
+}
+
 
 .img_run {
     width: 352px;
     height: 320px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 18px;
+    padding: 30px;
+    border-radius: 50px;
 }
 
-.banner_3 {
-    padding-left: 180px;
-    padding-right: 180px;
-
+.img_e1 {
+    height: 200px;
+    width: 280px;
 }
 
-.bg {
-    background-color: rgba(34, 34, 34, 1);
-    border-radius: 20px;
+.img_e2 {
+    height: 200px;
+    width: 520px;
 }
 
-.img_training {
-    width: 100%;
-    height: 100%;
+.img_e3 {
+    height: 200px;
+    width: 280px;
 }
 
-.taraining {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.img_e4 {
+    height: 200px;
+    width: 450px;
+}
 
+.img_e5 {
+    height: 200px;
+    width: 280px;
+}
+
+.img_e6 {
+    height: 200px;
+    width: 350px;
+}
+
+.training {
+    display: flex;
+    flex-direction: row;
+}
+
+.training_container {
+    width: 500px;
+    padding: 60px 0;
 }
 
 .banner_4 {
-    padding-left: 180px;
-    padding-right: 180px;
+    padding: 0 180px;
 }
 
 .bmi_cal {
-    text-align: center;
+    padding: 70px 385px;
+    text-align: left;
 }
 
 .bg_cal {
+    height: 487px;
     background-color: rgba(34, 34, 34, 1);
-    gap: 180px;
+    padding: 50px 189px;
+    gap: 160px;
+}
+
+.table {
+    width: 310px;
+    height: 216px;
+    margin-top: 50px;
 }
 
 .btn-th {
@@ -249,41 +358,144 @@ th {
     color: #f2f2f2;
 }
 
-.img_trainer{
-    width: 320px;
-    height: 270px;
-    border-radius: 5%;
-    overflow: hidden;
+.bmi-box {
+    border-style: none;
+    width: 282.5px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.img_trainer img{
+.bmi-box-1 {
+    border-style: none;
+    width: 282.5px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bmi-box-2 {
+    border-style: none;
+    width: 577px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bmi-box-padding {
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
+
+.bmi-all-box-padding {
+    padding: 34px 0;
+}
+
+.c {
+    color: #111111;
+}
+
+/* .img_trainer img {
     width: 100%;
     height: 100%;
+} */
+
+.banner_6 {
+    max-height: 1060px;
+    padding: 80px 0;
 }
 
+.trainer-title {
+    text-align: center;
+    padding-bottom: 58px;
+
+}
+
+.trainer-bg {
+    width: 1060px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    border-radius: 10px;
+}
 
 .trainer {
-    background-color: rgba(34, 34, 34, 1);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 20px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
 }
 
-.trainer_bg{
-padding-left: 190px;
-padding-right: 190px;
+.trainer-padding {
+    padding: 10px 5px;
 }
 
-.trainer_title{
+.img_trainer {
+    width: 330px;
+    height: 260px;
+    border-radius: 5%;
+    /* overflow: hidden; */
+}
+
+.trainer-name {
+    height: 50px;
+    margin-top: -70px;
+    margin-left: 20px;
+}
+
+.t-space {
+    margin-top: -10px;
+}
+
+
+.footer-container {
+    max-width: 1440px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.footer-box {
+    width: 1059px;
+    height: 220px;
+    padding: 70px 190px;
+    gap: 150px;
+}
+
+.footer-part-1 {
+    max-width: 300px;
+    max-height: 100px;
+    /* max-height: 176px; */
+}
+
+.footer-part-2 {
+    width: 181px;
+    height: 150px;
+    list-style: none;
+    /* height: 249px; */
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.last-t {
     text-align: center;
 }
 
-
-/* .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    font-size: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.7);
-} */
+@media screen and (max-width:576px) {}
