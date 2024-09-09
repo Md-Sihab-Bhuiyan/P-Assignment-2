@@ -46,7 +46,6 @@
     color: rgba(255, 255, 255, .5);
 }
 
-
 .title {
     font-size: 3rem;
     font-weight: 900;
@@ -70,7 +69,7 @@
     border-radius: 40px;
 }
 
-.btn1-gap{
+.btn1-gap {
     gap: 10px;
 }
 
@@ -85,16 +84,26 @@
 }
 
 .header {
-    max-height: 700px;
     max-width: 1440px;
     margin: 0 auto;
     background-color: rgba(48, 48, 48, .9);
 }
 
+.banner_1 {
+    padding-left: 190px;
+    padding-right: 200px;
+}
+
+
 .navbar {
     padding-top: 50px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.mobile-nav-image {
+    display: none;
 }
 
 .nav-border {
@@ -111,15 +120,27 @@
     align-items: center;
     border-radius: 10px;
     transition: all .2s ease;
-    cursor: pointer ;
+    cursor: pointer;
 }
 
 .nav-link:hover {
     background-color: rgba(230, 83, 60, 1);
 }
 
-.nav-link.active{
-    background-color:  rgba(230, 83, 60, 1);;
+.nav-link.active {
+    background-color: rgba(230, 83, 60, 1);
+    ;
+}
+
+.home {
+    width: 600px;
+    height: 440px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.homepage {
+    gap: 160px;
 }
 
 .home-card_1 {
@@ -129,8 +150,6 @@
     border-radius: 5px;
     margin-left: -70px;
     margin-top: -90px;
-
-    opacity: 1;
 }
 
 .home-card_2 {
@@ -140,7 +159,6 @@
     border-radius: 5px;
     margin-left: 200px;
     margin-top: -400px;
-    opacity: 2;
 }
 
 .circle {
@@ -161,25 +179,7 @@
     font-size: 2rem;
 }
 
-.banner_1 {
-    padding-left: 190px;
-    padding-right: 200px;
-}
 
-.home {
-    width: 600px;
-    height: 440px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.homepage {
-    gap: 160px;
-}
-
-.image_1 {
-    width: 100%;
-}
 
 main {
     max-width: 1440px;
@@ -211,12 +211,14 @@ main {
 
 .body_container {
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .body {
     width: 180px;
     height: 280px;
     flex-direction: column;
+
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -231,36 +233,24 @@ main {
 }
 
 .banner_3 {
-    width: 1000px;
+    width: 980px;
     height: 370px;
     padding: 100px 180px;
 }
 
-
 .run_container {
     background-color: rgba(34, 34, 34, 1);
-    gap: 165px;
+    gap: 160px;
     border-radius: 20px;
 }
 
 .run_container_wp {
-    padding: 40px 50px;
+    padding: 40px 48px;
 }
-
-/* .run_container_imgp{
-    width: 352px;
-    height: 320px;
-    background-image: url('images/run.jpg');
-    background-size: auto;
-    background-position: center; 
-    padding: 30px;
-    border-radius: 50px;
-} */
 
 .run_padding {
     margin-top: 30px;
 }
-
 
 .img_run {
     width: 352px;
@@ -269,9 +259,14 @@ main {
     border-radius: 50px;
 }
 
+/* .img_run img{
+    width: 100%;
+    height: 100%;
+} */
+
 .img_e1 {
     height: 200px;
-    width: 280px;
+    width: 290px;
 }
 
 .img_e2 {
@@ -291,15 +286,20 @@ main {
 
 .img_e5 {
     height: 200px;
-    width: 280px;
+    width: 290px;
 }
 
 .img_e6 {
     height: 200px;
-    width: 350px;
+    width: 340px;
 }
 
-.training {
+.training_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.training_2 {
     display: flex;
     flex-direction: row;
 }
@@ -310,7 +310,7 @@ main {
 }
 
 .banner_4 {
-    padding: 0 180px;
+    padding: 50px 180px;
 }
 
 .bmi_cal {
@@ -322,7 +322,7 @@ main {
     height: 487px;
     background-color: rgba(34, 34, 34, 1);
     padding: 50px 189px;
-    gap: 160px;
+    gap: 120px;
 }
 
 .table {
@@ -338,7 +338,6 @@ main {
     height: 50px;
     width: 280px;
 }
-
 
 table {
     width: 50%;
@@ -360,7 +359,7 @@ th {
 
 .bmi-box {
     border-style: none;
-    width: 282.5px;
+    width: 279px;
     height: 48px;
     border-radius: 8px;
     font-size: 1rem;
@@ -382,7 +381,7 @@ th {
 
 .bmi-box-2 {
     border-style: none;
-    width: 577px;
+    width: 570px;
     height: 48px;
     border-radius: 8px;
     font-size: 1rem;
@@ -404,28 +403,28 @@ th {
     color: #111111;
 }
 
-/* .img_trainer img {
-    width: 100%;
-    height: 100%;
-} */
-
-.banner_6 {
-    max-height: 1060px;
-    padding: 80px 0;
-}
-
 .trainer-title {
     text-align: center;
     padding-bottom: 58px;
 
 }
 
+.banner_6 {
+    max-height: 1060px;
+    width: 100%;
+    padding: 80px 0;
+
+}
+
 .trainer-bg {
-    width: 1060px;
-    height: 600px;
+    width: 1045px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.1);
     margin: 0 auto;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trainer {
@@ -439,10 +438,11 @@ th {
 }
 
 .img_trainer {
-    width: 330px;
+    max-width: 330px;
     height: 260px;
     border-radius: 5%;
-    /* overflow: hidden; */
+    width: 100%;
+    object-fit: cover;
 }
 
 .trainer-name {
@@ -457,31 +457,28 @@ th {
 
 
 .footer-container {
-    max-width: 1440px;
-    height: 450px;
-    margin: 0 auto;
+    height: auto;
+    padding-left: 150px;
+    padding-right: 100px;
     background-color: rgba(34, 34, 34, 1);
+    padding-bottom: 30px;
+    justify-content: center;
 }
 
 .footer-box {
-    width: 1059px;
-    height: 220px;
-    padding: 70px 190px;
-    gap: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
 }
 
-.footer-part-1 {
-    max-width: 300px;
-    max-height: 100px;
-    /* max-height: 176px; */
-}
-
+.footer-part-1,
 .footer-part-2 {
-    width: 181px;
-    height: 150px;
-    list-style: none;
-    /* height: 249px; */
+    flex: 1;
+    min-width: 200px;
 }
+
 
 .footer-list {
     display: flex;
@@ -489,13 +486,170 @@ th {
     gap: 10px;
 }
 
+.footer-list {
+    list-style: none;
+}
+
 .footer-title {
     font-size: 3rem;
     font-weight: 700;
 }
 
+
 .last-t {
     text-align: center;
 }
 
-@media screen and (max-width:576px) {}
+
+
+@media screen and (max-width:576px) {
+
+
+
+    .banner_1{
+        padding-left: 80px;
+        height: auto;
+    }
+
+
+    .homepage{
+        max-height: auto;
+        flex-wrap: wrap;
+        gap: none;
+    }
+
+    .image1_container{
+        margin-top: -250px;
+        margin-bottom: 400px;
+    }
+
+    .image_1{
+        width: 80%;
+    }
+
+
+    .nav-border {
+        display: none;
+    }
+
+    .body_container {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .banner_3 {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .run_container {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .run_container_wp {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .img_run {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .run_padding {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .banner_4 {
+        display: none;
+    }
+
+    .bmi_cal {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .bg_cal {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .table {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .bmi-box,
+    .bmi-box-1,
+    .bmi-box-2 {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .bmi-all-box-padding,
+    .bmi-box-padding {
+        padding: 10px 0px;
+    }
+
+    .bmi-box-padding {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    th,
+    td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .banner_6 {
+        width: 100%;
+        max-height: fit-content;
+    }
+
+    .trainer-bg {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .trainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .img_trainer {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hide_pic {
+        display: none;
+    }
+
+    .footer-container {
+        width: 100%;
+        max-height: fit-content;
+        width: fit-content;
+    }
+
+}
